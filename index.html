@@ -7,27 +7,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <header>
+    <header >
         <nav>
-            <ul>
-                <li>Head</li>
-
-                <li>Works</li>
-                <li>Services</li>
-                <li>Contacts</li>
-                <li>icon</li>
+            <ul class="navbar">
+                <li class="home"><a href="index.html" class="home">Head</a></li>
+                <div class="nav__right">
+                    <li><a href="#Works">Works</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Contact">Contacts</a></li>
+                    <li><a href="#menu">icon</a></li>
+                </div>
             </ul>
         </nav>
     </header>
-
-    <section>
-        <h1>Japan</h1>
-        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
-        <img src="" alt="">
-    </section>
-    
+    <main>
+        <section class="main__content">
+            <h1>Japan</h1>
+            <p class="main__text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
+            <img src="images/ImageDesktop.png" alt="">
+        </section>
+    </main>
 </body>
 </html>
