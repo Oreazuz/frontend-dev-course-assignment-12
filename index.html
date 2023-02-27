@@ -10,18 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2deb18e459.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header >
         <nav>
             <ul class="navbar">
-                <li class="home"><a href="index.html" class="home">Head</a></li>
+                <li class="home"><a href="index.html" class="home">Head.</a></li>
                 <div class="nav__right">
-                    <li><a href="#Works">Works</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Contact">Contacts</a></li>
-                    <li><a href="#menu">icon</a></li>
+                    <li class="nav__right_dissapear"><a href="#Works">Works</a></li>
+                    <li class="nav__right_dissapear"><a href="#Services">Services</a></li>
+                    <li class="nav__right_dissapear"><a href="#Contact">Contacts</a></li>
+                    <li><a href="#menu"><i class="fa-solid fa-ellipsis"></i></a></li>
                 </div>
             </ul>
         </nav>
@@ -30,7 +31,12 @@
         <section class="main__content">
             <h1>Japan</h1>
             <p class="main__text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
-            <img src="images/ImageDesktop.png" alt="">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./images/imageMobile.png">
+                <source media="(max-width: 1440px)" srcset="./images/imageTablet.png">
+                <source media="(min-width: 1440px)" srcset="./images/imageDesktop.png">
+                <img src="images/ImageDesktop.png" alt="Image of mt.fuji">
+            </picture>
         </section>
     </main>
 </body>

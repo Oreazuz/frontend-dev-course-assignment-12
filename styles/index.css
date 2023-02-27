@@ -79,8 +79,8 @@ p{
 
 
 
-li{
-
+i{
+    color: #242635;
 }
 .navbar{
     display: flex;
@@ -99,3 +99,56 @@ li{
 img{
     margin-top: 45px;
 }
+@media screen and (max-width: 1440px){
+    body{
+        max-width: 617px;
+        margin:auto;
+    }
+    .navbar{
+        margin: 34px 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main__text{
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* or 150% */
+
+        text-align: center;
+        max-width: 217px;
+    }
+    h1{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+        /* identical to box height, or 110% */
+
+        text-align: center;
+        letter-spacing: -0.8px;
+        margin-bottom: 27px;
+
+
+    }
+    .main__content{
+        margin: 0;
+    }
+    .nav__right_dissapear{
+        display: none;
+    }
+    body{
+        max-width: 256px;
+        margin:auto;
+    }
+    header{
+        margin-bottom: 32px;
+    }
+    .navbar{
+        margin: 11px 0;
+    }
+}
+
