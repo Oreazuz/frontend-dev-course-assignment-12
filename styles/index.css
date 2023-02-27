@@ -108,6 +108,18 @@ img{
     .navbar{
         margin: 34px 0;
     }
+    h1{
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 83px;
+        /* identical to box height, or 115% */
+
+        letter-spacing: -1.6px;
+
+    }
+    p{
+        line-height: 33px;
+    }
 }
 
 @media screen and (max-width: 768px){
