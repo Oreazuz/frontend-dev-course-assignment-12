@@ -16,13 +16,13 @@
     
     <header >
         <nav>
-            <ul class="navbar">
+            <ul class="nav" id="nav-bar">
                 <li class="home"><a href="index.html" class="home">Head.</a></li>
                 <div class="nav__right">
-                    <li class="nav__right_dissapear"><a href="#Works">Works</a></li>
-                    <li class="nav__right_dissapear"><a href="#Services">Services</a></li>
-                    <li class="nav__right_dissapear"><a href="#Contact">Contacts</a></li>
-                    <li><a href="#menu"><i class="fa-solid fa-ellipsis"></i></a></li>
+                    <li class="nav__menu"><a href="#menu" onclick="burgerMenu()"><i class="fa-solid fa-ellipsis"></i></a></li>
+                    <li ><a href="#Works">Works</a></li>
+                    <li ><a href="#Services">Services</a></li>
+                    <li ><a href="#Contact">Contacts</a></li>
                 </div>
             </ul>
         </nav>
@@ -39,5 +39,17 @@
             </picture>
         </section>
     </main>
+
+
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("nav-bar");
+            if (burger.className === "nav") {
+            burger.className += " responsive";
+            } else {
+            burger.className = "nav";
+            }
+        }
+    </script>
 </body>
 </html>
